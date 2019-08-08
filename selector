@@ -1,0 +1,88 @@
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+#para1                 // id selector
+{
+	text-align:center;
+	color:red;
+} 
+
+
+
+p.center               //class selector
+{
+	text-align:center;
+}
+
+
+
+</style>
+</head>
+<body>
+<p id="para1">Hello World!</p>     //use the id selector
+
+
+<h1 class="center">这个标题不受影响</h1>   
+<p class="center">这个段落居中对齐。</p>    //use the class selector
+
+
+</body>
+</html>
+
+
+
+//more selectors
+//1.element selector
+<style>
+p{
+  font-style:italic;
+}
+</style>
+<!--下面的文字是斜体的-->
+<p style="font-style:italic">italic text</p>
+
+//2.package selector
+<style>
+p{
+  color:red;
+}
+div p{
+  color:yellow;
+}
+</style>
+<p>red text</p><!--文字是红色的-->
+<div>
+  <p>yellow text</p><!--文字是黄色的-->
+</div>
+
+//3.sub-selector
+<style>
+div>p{
+  color:red;
+}
+</style>
+<div>
+  <p>red text</p><!--文字是红色的-->
+  <table>
+    <tr>
+      <td>
+        <p>no red text;</p><!--文字是非红色的-->
+      </td>
+    </tr>
+  </table>
+</div>
+
+//4.brother selector     //BS是CSS3.0新增的一个选择器
+语法格式：A~B{...}（A、B为HTML元素/标签，表示A标签匹配selector的A，B标签匹配selector的B时，B标签匹配样式）
+<style>
+div~p{
+  color:red;
+}
+</style>
+<div>
+  <p>no red text</p><!--文字是非红色的-->
+  <div>no red text</div>
+  <p>red text</p><!--文字是红色的-->
+</div>
