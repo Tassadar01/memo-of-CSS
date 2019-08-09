@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>菜鸟教程(runoob.com)</title> 
+<style>
+body
+{
+	background-image:url('img_tree.png');
+	background-repeat:no-repeat;          //水平平铺：repeat-x；垂直平铺：repeat-y
+	background-position:right top;        //set the position of the picture
+	background-attachment:fixed;          //if you set this,the picture won't move
+  margin-right:200px;
+}
+
+//you can also combine the code in one line
+//body {background:#ffffff url('img_tree.png') no-repeat right top;}
+
+</style>
+
+</head>
+
+<body>
+<h1>Hello World!</h1>
+<p>背景图片不重复，设置 position 实例。</p>
+<p>背景图片只显示一次，并与文本分开。</p>
+<p>实例中还添加了 margin-right 属性用于让文本与图片间隔开。</p>
+</body>
+
+</html>
