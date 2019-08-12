@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>padding</title>
+<style>
+p.padding {padding-left:2cm;}    //top;bottom;right;left
+p.padding2 {padding-left:50%;}
+</style>
+</head>
+
+<body>
+<p>这是一个没有左填充边距的文本。</p>
+<p class="padding">这个文本的左填充边距为2厘米。</p>
+<p class="padding2">这个文本的左填充边距为50%。</p>
+</body>
+</html>
+
+
+<style>
+p.ex1 {padding:2cm;}           //set all padding the same
+p.ex2 {padding:0.5cm 3cm;}
+</style>
+</head>
+
+<body>
+<p class="ex1">这个文本两边的填充边距一样。每边的填充边距为2厘米。</p>
+<p class="ex2">这个文本的顶部和底部填充边距都为0.5厘米，左右的填充边距为3厘米。</p>
+</body>
+
+
+/*
+Padding属性，可以有一到四个值。
+
+  padding:25px 50px 75px 100px;
+上填充为25px
+右填充为50px
+下填充为75px
+左填充为100px
+
+  padding:25px 50px 75px;
+上填充为25px
+左右填充为50px
+下填充为75px
+
+  padding:25px 50px;
+上下填充为25px
+左右填充为50px
+
+  padding:25px;
+所有的填充都是25px
+*/
