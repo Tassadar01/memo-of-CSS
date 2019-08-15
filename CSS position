@@ -1,0 +1,40 @@
+/*
+1.static
+<style>
+div.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: static;</h2>
+
+<p>使用 position: static; 定位的元素，无特殊定位，遵循正常的文档流对象:</p>
+
+<div class="static">
+该元素使用了 position: static;
+</div>
+
+</body>
+*/
+
+
+/*
+2.fixed
+<style>
+p.pos_fixed
+{
+	position:fixed;
+	top:30px;
+	right:5px;
+}
+</style>
+</head>
+<body>
+
+<p class="pos_fixed">Some more text</p>
+<p><b>注意:</b> IE7 和 IE8 支持只有一个 !DOCTYPE 指定固定值.</p>
+</body>
+*/
