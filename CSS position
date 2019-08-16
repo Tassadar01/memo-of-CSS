@@ -66,4 +66,37 @@ h2.pos_right
 <p>样式 "left:20px" 向元素的原始左侧位置增加 20 像素。</p>
 </body>
 
+//占空间不变，只变相对位置
+<style>
+h2.pos_top
+{
+	position:relative;
+	top:-50px;
+}
+</style>
+</head>
+
+<body>
+<h2>这是一个没有定位的标题</h2>
+<h2 class="pos_top">这个标题是根据其正常位置向上移动</h2>
+<p><b>注意:</b> 即使相对定位元素的内容是移动,预留空间的元素仍保存在正常流动。</p>
+</body>
+*/
+
+/*
+4.absolute
+<style>
+h2
+{
+	position:absolute;
+	left:100px;
+	top:150px;
+}
+</style>
+</head>
+
+<body>
+<h2>这是一个绝对定位了的标题</h2>
+<p>用绝对定位,一个元素可以放在页面上的任何位置。标题下面放置距离左边的页面100 px和距离页面的顶部150 px的元素。.</p>
+</body>
 */
