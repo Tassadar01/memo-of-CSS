@@ -100,3 +100,131 @@ h2
 <p>用绝对定位,一个元素可以放在页面上的任何位置。标题下面放置距离左边的页面100 px和距离页面的顶部150 px的元素。.</p>
 </body>
 */
+
+/*
+5.cursor
+<body>
+<p>请把鼠标移动到单词上，可以看到鼠标指针发生变化：</p>
+<span style="cursor:auto">auto</span><br>
+<span style="cursor:crosshair">crosshair</span><br>
+<span style="cursor:default">default</span><br>
+<span style="cursor:e-resize">e-resize</span><br>
+<span style="cursor:help">help</span><br>
+<span style="cursor:move">move</span><br>
+<span style="cursor:n-resize">n-resize</span><br>
+<span style="cursor:ne-resize">ne-resize</span><br>
+<span style="cursor:nw-resize">nw-resize</span><br>
+<span style="cursor:pointer">pointer</span><br>
+<span style="cursor:progress">progress</span><br>
+<span style="cursor:s-resize">s-resize</span><br>
+<span style="cursor:se-resize">se-resize</span><br>
+<span style="cursor:sw-resize">sw-resize</span><br>
+<span style="cursor:text">text</span><br>
+<span style="cursor:w-resize">w-resize</span><br>
+<span style="cursor:wait">wait</span><br>
+</body>
+*/
+
+/*
+6.overflow
+<style>
+div.ex1 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: scroll;
+}
+
+div.ex2 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+}
+
+div.ex3 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: auto;
+}
+
+div.ex4 {
+    background-color: lightblue;
+    width: 110px;
+    height: 110px;
+    overflow: visible;
+}
+</style>
+</head>
+<body>
+<h1>overflow 属性</h1>
+
+<p>如果元素中的内容超出了给定的宽度和高度属性，overflow 属性可以确定是否显示滚动条等行为。</p>
+
+<h2>overflow: scroll:</h2>
+<div class="ex1">菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！</div>
+
+<h2>overflow: hidden:</h2>
+<div class="ex2">菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！</div>
+
+<h2>overflow: auto:</h2>
+<div class="ex3">菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！</div>
+
+<h2>overflow: visible (默认):</h2>
+<div class="ex4">菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！菜鸟教程 -- 学的不仅是技术，更是梦想！！！</div>
+
+</body>
+*/
+
+/*
+7.重叠
+<style>
+img
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:-1;
+}
+</style>
+</head>
+
+<body>
+<h1>This is a heading</h1>
+<img src="w3css.gif" width="100" height="140" />
+<p>因为图像元素设置了 z-index 属性值为 -1, 所以它会显示在文字之后。</p>
+</body>
+*/
+
+/*
+8.sticky
+<style>
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: #cae8ca;
+  border: 2px solid #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<p>尝试滚动页面。</p>
+<p>注意: IE/Edge 15 及更早 IE 版本不支持 sticky 属性。</p>
+
+<div class="sticky">我是粘性定位!</div>
+
+<div style="padding-bottom:2000px">
+  <p>滚动我</p>
+  <p>来回滚动我</p>
+  <p>滚动我</p>
+  <p>来回滚动我</p>
+  <p>滚动我</p>
+  <p>来回滚动我</p>
+</div>
+
+</body>
+*/
